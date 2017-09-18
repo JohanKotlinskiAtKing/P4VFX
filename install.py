@@ -87,7 +87,7 @@ class Maya(App):
             return os.path.expanduser('~/maya')
 
         elif platform.system() == 'Darwin':
-            os.path.expanduser('~/Library/Preferences/Autodesk/maya')
+            return os.path.expanduser('~/Library/Preferences/Autodesk/maya')
 
 
     def install(self):
